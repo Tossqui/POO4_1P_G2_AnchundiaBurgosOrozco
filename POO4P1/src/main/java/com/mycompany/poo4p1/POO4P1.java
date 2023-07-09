@@ -11,6 +11,6 @@ package com.mycompany.poo4p1;
 public class POO4P1 {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        System.out.println("Hola miss");
     }
 }
