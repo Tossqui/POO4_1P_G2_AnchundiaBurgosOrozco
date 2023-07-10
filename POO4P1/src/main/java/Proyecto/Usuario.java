@@ -2,12 +2,11 @@ package Proyecto;
 
 /**
  *
- * @author chris
+ * @author Thomas
  */
 public abstract class Usuario {
     private int cedula;
     private String nombres;
-    private String apellidos;
     private int edad;
     private String correo;
     private String usuario;
@@ -15,17 +14,29 @@ public abstract class Usuario {
     private tipoPerfil perfil;
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    public Usuario(int cedula, String nombres, int edad, String correo, String usuario, String contrasena, tipoPerfil perfil) {
+        this.cedula = cedula;
+        this.nombres = nombres;
+        this.edad = edad;
+        this.correo = correo;
+        this.usuario = usuario;
+        this.contrasena = contrasena;
+        this.perfil = perfil;
+    }
+    @Override
+    public String toString(){
+        return "Cédula: " + cedula +
+                "\nNombres: " + nombres +
+                "\nEdad: " + edad +
+                "\nCorreo: " + correo +
+                "\nUsuario: " + usuario +
+                "\nContraseña: " + contrasena +
+                "\nPerfil: " + perfil; 
+    }    
+    public void consultarMultas(){
+        
+    }
+
     
     public int getCedula() {
         return cedula;
@@ -41,14 +52,6 @@ public abstract class Usuario {
 
     public void setNombres(String nombres) {
         this.nombres = nombres;
-    }
-
-    public String getApellidos() {
-        return apellidos;
-    }
-
-    public void setApellidos(String apellidos) {
-        this.apellidos = apellidos;
     }
 
     public int getEdad() {
