@@ -156,7 +156,7 @@ public class Cliente extends Usuario {
                         System.out.println("| " + mensaje + " |");
                         System.out.println("+" + "-".repeat(longitudMensaje + 2) + "+");
                         if(this.lmultas.isEmpty()){
-                            System.out.println("NADA");
+                            System.out.println("No registra multa.");
                         }else{
                         System.out.println("CEDULA|MATRICULA|INFRACCION|VALOR PAGAR| FECHA DE INFRACCION|FECHA DE NOTIFICACION| PUNTOS");
                         for(Multas m: this.lmultas){
